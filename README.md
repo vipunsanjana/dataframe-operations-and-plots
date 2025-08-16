@@ -79,8 +79,8 @@ Output: A colored heatmap showing location distances in a matrix form.
 ## Getting Started
 
 1. Clone the repository:
-   `git clone https://github.com/your-username/pandas-playground.git`
-   `cd pandas-playground`
+   `git clone https://github.com/vipunsanjana/dataframe-operations-and-plots.git`
+   `cd dataframe-operations-and-plots`
 
 2. Install the required libraries:
    `pip install pandas numpy matplotlib seaborn`
