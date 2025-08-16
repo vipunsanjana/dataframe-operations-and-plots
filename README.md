@@ -1,75 +1,95 @@
-````markdown
+
 # Data Science with Python – Pandas, NumPy, Matplotlib & Seaborn
 
-This repository contains my practice code for **data analysis and visualization** using Python.  
-It covers key operations in **Pandas, NumPy, Matplotlib, and Seaborn** with practical examples.
+Welcome to my Data Science Practice Repository.
+This project contains exercises and examples of data analysis and visualization using Python’s most popular libraries.
 
 ---
 
-## 📌 Contents
-- **Pandas Basics**
-  - Creating DataFrames
-  - Selecting rows & columns
-  - Using `iloc`, indexing, reindexing
-  - Dropping rows/columns
-  - Concatenation and merging
-  - Value counts
+## Contents
 
-- **NumPy**
-  - Generating random arrays
-  - Converting into DataFrames
+**Pandas**
 
-- **Matplotlib**
-  - Line plots
-  - Scatter plots
-  - Customizing labels and titles
+* Creating and exploring DataFrames
+* Selecting rows and columns (using iloc, indexing, reindexing)
+* Dropping rows and columns
+* Concatenation and merging
+* Value counts and summaries
 
-- **Seaborn**
-  - Heatmaps for correlation & matrices
+**NumPy**
 
----
+* Generating random arrays
+* Converting arrays into DataFrames
 
-## 📊 Sample Visualizations
+**Matplotlib**
 
-- **Line Plot**
+* Line plots
+* Scatter plots
+* Adding labels, titles, and figure sizes
 
-  ```python
-  plt.plot([1,2,3,4],[10,25,32,58])
-  plt.xlabel("Month")
-  plt.ylabel("Price")
-  plt.title("Price against the months")
-  plt.show()
-````
+**Seaborn**
 
-* **Heatmap**
-
-  ```python
-  sns.heatmap(df, annot=True)
-  plt.show()
-  ```
+* Heatmaps for data visualization
+* Annotated matrices
 
 ---
 
-## 🚀 How to Run
+## Sample Visualizations
 
-1. Clone the repository
+**Line Plot Example**
+The following code creates a line plot of prices across months:
 
-   ```bash
-   git clone https://github.com/vipunsanjana/dataframe-operations-and-plots.git.git
-   cd dataframe-operations-and-plots.git
-   ```
+```
+import matplotlib.pyplot as plt
 
-2. Install requirements
+L1 = [1, 2, 3, 4]
+L2 = [10, 25, 32, 58]
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+plt.plot(L1, L2, marker="o")
+plt.xlabel("Month")
+plt.ylabel("Price")
+plt.title("Price against the Months")
+plt.show()
+```
 
-3. Run the scripts in Jupyter Notebook or directly with Python.
+Output: A simple line chart showing price variation with months.
 
 ---
 
-## 📦 Requirements
+**Heatmap Example**
+The following code generates a heatmap of location distances:
+
+```
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.DataFrame({"Loc1":[0,10,20], "Loc2":[10,0,15], "Loc3":[20,15,0]}, 
+                  index=["Loc1","Loc2","Loc3"])
+
+sns.heatmap(df, annot=True, cmap="YlGnBu")
+plt.title("Location Distance Matrix")
+plt.show()
+```
+
+Output: A colored heatmap showing location distances in a matrix form.
+
+---
+
+## Getting Started
+
+1. Clone the repository:
+   `git clone https://github.com/your-username/pandas-playground.git`
+   `cd pandas-playground`
+
+2. Install the required libraries:
+   `pip install pandas numpy matplotlib seaborn`
+
+3. Run the code either in Jupyter Notebook or directly with Python.
+
+---
+
+## Requirements
 
 * Python 3.x
 * Pandas
@@ -79,7 +99,9 @@ It covers key operations in **Pandas, NumPy, Matplotlib, and Seaborn** with prac
 
 ---
 
-## 📌 Author
+## Author
 
-👨‍💻 **Vipun Sanjana**
+Vipun Sanjana
 Full-Stack & DevOps Engineer | Exploring Data Science & AI
+
+---
