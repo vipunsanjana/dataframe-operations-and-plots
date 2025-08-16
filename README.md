@@ -55,8 +55,8 @@ It covers key operations in **Pandas, NumPy, Matplotlib, and Seaborn** with prac
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-username/pandas-playground.git
-   cd pandas-playground
+   git clone https://github.com/vipunsanjana/dataframe-operations-and-plots.git.git
+   cd dataframe-operations-and-plots.git
    ```
 
 2. Install requirements
